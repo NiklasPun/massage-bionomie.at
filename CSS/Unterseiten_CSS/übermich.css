@@ -1,0 +1,29 @@
+main div div div {
+    font-size: large;
+    background-color: rgb(236, 236, 236);
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main div div div img {
+    max-height: 10rem;
+}
+main div div div div p {
+    padding: 1rem;
+}
+main {
+    text-align: center;
+}
+
+@media screen and (max-width:788px) {
+
+    main div div div p {
+        font-size: small;
+    }
+    main div div div img {
+        width: 200px;
+    }
+
+}

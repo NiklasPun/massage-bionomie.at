@@ -1,0 +1,138 @@
+/********************************************************************Footer*****************************************************/
+footer {
+    background-color: rgb(224, 224, 224);
+    padding: 0 20%;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.25s ease-in-out;
+}
+footer i {
+    margin-right: 0.4rem;
+}
+
+footer .footerBerechnung a:hover {
+    font-size: large;
+}
+footer .footerBerechnung {
+    width: 7.5rem;   
+}
+.Inhalt{
+    position: relative;
+    display: flex;
+}
+.LinksInFooter {
+    align-items: self-start;
+}
+footer:hover {
+    background-color: black;
+    color: var(--darkerWhite);
+}
+footer:hover a {
+    color: var(--darkerWhite);
+}
+
+
+/************************ Einstellungen für die Cookie Einstellungen**********************************/
+.modal {
+    position: fixed;
+    top: 10vh;
+    z-index: 100;
+}
+.modal .modal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 0.23rem;
+    position: relative;
+    background-color: var(--darkerdarkerWhite);
+    transition: background-color 0.2s ease-in-out; 
+}
+.modal .modal-container:hover {
+    background-color: black;
+    color: white;
+}
+.modal .modal-container:hover a {
+    color: white;
+}
+.modal .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.modal .modal-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.modal .modal-body {
+    margin: 0.5rem 0;
+}
+
+/***************************************************************************************Einstellungen für seitliche Navigation***************************************************/
+.seitNav {
+    z-index: 100;
+    position: sticky;
+    bottom: 150px;
+    right: 0;
+}
+.seitNav .content {
+    display: flex;
+    background-color: var(--lightgrey);
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+    position: absolute;
+    top: -300px;
+    right: -100%;
+    width: 200px;
+    height: 240px;
+    padding: 30px;
+    border-top-left-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.seitNav .content a {
+    padding: 5px;
+    border-radius: 0.5rem;
+    color: black;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+.seitNav .content a:hover {
+    background-color: var(--darkerWhite);
+    color: black;
+}
+.seitNav .content a i {
+    margin-left: 10px;
+}
+.seitNav .fa-chevron-down {
+    color: color;
+    transition: all 0.2s ease-in-out;
+}
+.seitNav .seitNavDiv {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 3px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--lightgrey);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.seitNav i.rotated {
+    transform: rotate(270deg);
+}
+
+@media screen and (max-width:788px) {
+
+    .seitNav {
+        display: none;
+    }
+
+}

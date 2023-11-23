@@ -1,0 +1,32 @@
+.swiper {
+    margin-top: 5%;
+ }
+.GalerieBild {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2rem;
+    -webkit-box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+.hero-image-element .galleryheadline {
+    bottom: 20%;
+    color: var(--color-white);
+    left: 0;
+    position: absolute;
+    text-align: start;
+    margin-left: 3rem;
+    width: 100%;
+    z-index: 3;
+}
+main {
+    text-align: center;
+}
+
+@media screen and (max-width:788px) {
+    footer {
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

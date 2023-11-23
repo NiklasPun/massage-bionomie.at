@@ -1,0 +1,166 @@
+:root {
+    --SpalteOnHomeAbstand: 2.5rem;
+    --LogoAbstand: 1rem;
+    --FooterLogoBreite: 3.5rem;
+    --darkerWhite: rgb(216, 216, 216);
+    --darkerdarkerWhite: rgb(180, 180, 180);
+    --MainBorderradius: 0.5rem;
+    --MichBorderradius: 1.5rem;
+    --lighterBlack: #404040;
+    --lightgrey: #dddddd;
+    --darkerlightgrey: #8f8f8f;
+    --normalfontcolor: black;
+    --brandcolor: #dddddd;
+    --brandcolor2: #404040;
+    --brandcolor3: #555555;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    overflow-x: hidden;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.shadow {
+    -webkit-box-shadow: -3px 3px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 21px 0px rgba(0,0,0,0.75);
+}
+
+body { /* allgemeine Regeln: Schriftart */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a { /* allgemeine Regeln für Links: Schriftfarbe, keine textdecoration */
+    color:  var(--normalfontcolor);
+    text-decoration: none;
+}
+
+.modal-container a {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+.anthrazit {
+    color: #333d40;
+}
+.black{ 
+    color: black;
+}
+
+a.bggreen:hover { /* Regel: wenn Maus über Link  */
+    background-color: var(--brandcolor);
+}
+
+img.fullw { /*füllung der Breite eines Bildes*/
+    width: 100%
+}
+
+img.fullheight {
+    height: 100%;
+}
+
+.underbar{
+    border-bottom: 1px solid black;
+}
+
+.Boxshadow {
+    -webkit-box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+.smallBoxshadow {
+    -webkit-box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.75);
+}
+
+.headline {
+    font-size: 50px ;
+}
+
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+
+.aufgespannt{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.centerwidth { /*Zentriere entlang der Breite*/
+    justify-self: center;
+}
+
+.centerheight { /*Zentriere entlang der Höhe*/
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.importantnormtext { /* Hervorhebung von Text, der wichtig ist, aber keine Überschrift*/ 
+    font-weight: 600;
+    font-size:xx-large;
+}
+.notsoimportantnormtext{
+    font-weight: 600;
+    font-size:x-large;
+    margin: 0.25rem 0;
+}
+.handy .notsoimportantnormtext {
+    font-size: 13px !important;
+}
+.handy .importantnormtext {
+    font-size: 17px !important;
+}
+.important {
+    font-weight: bold;
+}
+.textzentr {
+    text-align: center;
+}
+
+.nimmt3 { /*Definierung, sodass im Gridlayout 3 Zellen in Anspruch genommen werden*/
+    grid-column-end: span 3;
+}
+.nimmt2 { /*Definierung, sodass im Grid layout 2 Zellen in Anspruch genommen werden*/
+    grid-column-end: span 2;
+}
+
+.emphasis {
+    background-color: goldenrod;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 788px) {
+    .headline {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .importantnormtext {
+    font-size:large;
+    }
+}

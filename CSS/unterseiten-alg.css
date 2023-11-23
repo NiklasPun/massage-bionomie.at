@@ -1,0 +1,90 @@
+/************************************************************************Header*******************************************************************************************/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header ul {
+    position: absolute;
+    top: 0;
+    height: 5rem;
+    background-color: var(--lightgrey);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+header ul li {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--darkerdarkerwhite);
+    transition: all 0.1s ease-in-out;
+}
+header ul li:hover {
+    background-color: black;
+}
+header ul li:hover a {
+    color: white;
+}
+header ul li a {
+    color: black;
+}
+header ul i {
+    margin-right: 10px;
+}
+.arrow {
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+}
+.arrowDiv {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 5rem;
+    padding: 0 5px;
+    background-color: var(--lightgrey);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.rotated {
+    transform: rotate(180deg);
+}
+/**************************************************************************************HEADER END*************************************************************************/
+/*Einstellungen für Unterseiten Nav*/
+.onItPin {
+    margin-left: 10px;
+}
+.imprechts {
+    text-align: right;
+}
+
+/*Abstand zwischen Header, Main, Footer ändern*/
+
+main {
+    margin: 9rem 0 3rem 0;
+}
+footer i {
+    margin-left: 10px;
+}
+/*****************************************end*/
+
+
+@media screen and (max-width:788px) {
+    .PC {
+        display: none;
+    }
+    .onItPin {
+        display: none;
+    }
+    header ul i {
+        margin-right: 0;
+    }
+}

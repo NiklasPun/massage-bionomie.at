@@ -1,0 +1,111 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion .accordion-item .accordion-item-body {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: auto;
+    background-color: var(--lightgrey);
+    width: 85%;
+    display: flex;
+}
+.accordion-item-body .container img {
+    width: 400px;
+}
+.accordion-item-body .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.accordion-item-title i {
+    margin-right: 10px;
+}
+
+.accordion .accordion-item .accordion-item-title {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--lightgrey);
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+    font-size: large;
+}
+
+.accordion-item-body p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.accordion-item-body p a {
+    color: #0645ad;
+    text-decoration: underline;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.accordion .accordion-item .accordion-item-title i {
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion .accordion-item.open .accordion-item-title i {
+    transform: rotate(-180deg);
+}
+.platzhalter {
+    height: 12.472916126252rem;
+}
+
+
+.preise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.preise h2 i {
+    margin-right: 10px;
+}
+.preise p {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.preise p span {
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:788px) {
+
+    .accordion-item-body p {
+        font-size: small;
+        margin: 20px;
+    }
+    .accordion .accordion-item .accordion-item-body {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .accordion .accordion-item .accordion-item-body img {
+        display: none;
+    }
+    .accordion .accordion-item .accordion-item-body .container {
+        display: none;
+    }
+
+}

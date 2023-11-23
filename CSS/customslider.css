@@ -1,0 +1,39 @@
+.container1 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.swiper img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    height: 800px;
+}
+
+/* Anpassung der Farbe für die Weiter und Zurück Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+/* Anpassung der Farbe für das Paging/Pagination */
+.swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+.slide-text {
+    background-color: rgba(255,255,255, 0.8);
+    position: absolute;
+    bottom: 2rem;
+    z-index: 1;
+}
+
+@media screen and (max-width: 575px) {
+    .swiper-slide {
+        height: 300px;
+    }
+}

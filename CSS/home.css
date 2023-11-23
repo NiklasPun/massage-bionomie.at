@@ -1,0 +1,457 @@
+@media (min-width: 789px) {
+    .handy {
+       display: none !important;
+    }
+}
+body {
+    background-color: #f0f0f0;
+}
+div.Angebote {
+    margin: 3rem 0;
+}
+header {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sLogo {
+    /* Anpassung des Logos im Header: höhe, innenabstand */
+    height: 125px;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+.Nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.Nav i.bars {
+    cursor: pointer;
+    position: absolute;
+    right: 51rem;
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+}
+.Nav i.bars.rotated {
+    transform: rotate(90deg);
+}
+.navItemsDiv {
+    width: 50rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: var(--lightgrey);
+    position: absolute;
+    right: 0; /* Start off the screen */
+    transition: right 0.5s ease; /* Add a transition effect */
+}
+.navItem {
+    color: var(--darkerdarkerWhite);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    margin: 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+} 
+.regmargright {
+    margin-right: 10px;
+}
+li.navItem:hover {
+    height: 1.5rem;
+    background-color: var(--lighterBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li.navItem:hover a {
+    color: white;
+}
+li.navItem:hover p {
+    color: white;
+    font-size: large;
+}
+.banner {
+    /*Hero Image Element = Banner*/
+    line-height: 1  ;
+    position: relative;
+    justify-self: center;
+}
+.banner::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.banner img {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+.headline {
+    bottom: 5rem;
+    color: var(--color-white);
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+    color: black;
+}
+.Begrüßung {
+    color: black !important;
+    bottom: 3rem;
+    color: var(--color-white);
+    left: -1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+    font-size: large;
+    height: 3rem;
+}
+.angebot {
+    display: flex;
+    justify-self: stretch;
+    align-self: stretch;
+    background-color: var(--brandcolor);
+    border-radius: 1rem;
+    margin: 1.2rem;
+    justify-content: center;
+    /*Zentrierung des Inhalts*/
+    align-items: center;
+    /*Zentrierung des Inhalts*/
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.row a.Angebot:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+.row {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.row a.Angebot div p {
+    font-size: large;
+}
+.row.eins a.Angebot {
+    width: calc(100%/2.5);
+}
+.row.zwei a.Angebot {
+    width: calc(100%/4);
+}
+.row a img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.row a.Angebot img {
+    height: 100%;
+}
+.row a.Portrait img {
+    height: 9rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 100%;
+}
+.row a.Angebot {
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.15s ease-in-out;
+}
+.row a.Portrait {
+    width: calc(100%/4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.row a.Angebot div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AdresseGalerieaufStart {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 13rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    justify-content: stretch;
+    align-content: stretch;
+}
+.GalerieaufStart:hover,.startadressenbalk:hover {
+    background-color: var(--brandcolor3);
+}
+.GalerieaufStart {
+    /*Galeriebalken auf Startseite*/
+    margin: 0 1rem 0 1rem ;
+    align-items: stretch;
+    display: flex;
+    border-radius: 1rem;
+    background-color: var(--brandcolor2);
+}
+.startadressenbalk {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    align-items: stretch;
+    display: flex;
+    border-radius: 1rem;
+    background-color: var(--brandcolor2);
+}
+.FontStartvorText {
+    margin-right: 1rem;
+}
+.rechtsFontStartvorText {
+    margin-left: 0.5rem;
+}
+/* Einstellungen für das Impressum (Auch für die Unterseiten) */
+footer {
+    /*Einstellungen für den Footer/Impressum*/
+    margin: 2.8% 0 0 0;
+    background-color: lightgrey;
+}
+.Impressumlinks {
+    /*Einstellungen aussschließlich für das Impressum*/
+    grid-column: 2 / span 1;
+}
+.Impressumrechts {
+    grid-column: 3 / span 1;
+    text-align: right;
+}
+.modal {
+    position: fixed;
+    top: 10vh;
+    width: 100%;
+    z-index: 100;
+
+}
+.modal .modal-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.modal .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.modal .modal-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.modal .modal-body {
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 788px) { /********************************************************** Handy Einstellungen *****************************************************/
+    .PC {
+        /* Ausblenden aller Elemente, die nur am PC angezeigt werden sollen */
+        display: none !important;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .modal {
+        width: 100%;
+        justify-content: center;
+    }
+    .modal .modal-container {
+        box-sizing: border-box;
+        width: 80%;
+        background-color: rgb(65, 65, 65);
+    }
+    header.handy {
+        display: flex;
+        justify-content: space-around;
+    }
+    .handy.BildPortraitaufStart {
+        display: block !important;
+    }
+    .Angebote.handy {
+        /*Erstellung eines Grid Layouts für den Angebote Bereich*/
+        display: block;
+        box-sizing: border-box;
+        margin-top: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .angebotaufStart {
+        background-color: var(--brandcolor);
+        font-size: medium !important;
+    }
+    .AdresseGalerieaufStart.handy {
+        display: grid;
+        grid-template-columns: 50% 50% !important;
+        grid-template-rows: 7rem !important;
+        margin-top: 1rem;
+    }
+    .sLogo {
+        /* Anpassung des Logos im Header: höhe, innenabstand */
+        height: 50px;
+    }
+    a.dreinav {
+        /* Ausrichtung des Textes */
+        font-size: 20px;
+        text-align: center;
+    }
+    .FontStartvorTextspecial {
+        margin-right: 0;
+    }
+    .GalerieAdresseFontStartvorText {
+        margin-right: 0.5rem;
+    } 
+
+    h1.headline {
+        display: none;
+    }
+    h1.handyheadline {
+        font-size: smaller;
+    }
+    .HandyStartseitenMenüPunkt {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+    }
+    .HandyStartseitenMenüPunkt p {
+        margin-bottom: 0;
+    }
+    main.handy .HandyStartseitenMenüPunkt i {
+        margin: 10px 30px;
+    }
+    .PortraitaufStart {
+        /*Einstellungen für das Portrait bei den Angeboten*/
+        margin: 10px;
+        margin-top: 2rem;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        height: 7rem ;
+        box-sizing: border-box;
+        position: relative;
+        justify-content: center;
+        /*Zentrierung des Inhalts*/
+        align-items: center;
+        /*Zentrierung des Inhalts*/
+    }
+    main.handy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main.handy i {
+        margin: 5px 0;
+        border: 0.5px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    main.handy .kontaktbuttonsaufStart {
+        width: 80%;
+        height: 130px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main.handy .kontaktbuttonsaufStart .kontaktbuttonaufStart {
+        display: flex;
+        justify-content: stretch;
+        background-color: black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    /* main.handy .kontaktbuttonsaufStart .kontaktbuttonaufStart1 {
+        
+    } */
+    main.handy .kontaktbuttonsaufStart a {
+        color: white;
+        justify-self: stretch;
+    }
+
+    .Zwischenstrich {
+        border: 1px solid black;
+        width: 100%;
+        margin-bottom: 2.5%;
+    }
+    main p {
+        font-size: medium;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .BildPortraitaufStart {
+        height: 100%;
+    }
+
+    .angebotaufStart {
+        margin-bottom: 0;
+    }
+    .startadressenbalk {
+        /*Adressbalken auf Startseite*/
+        border-radius: 1rem;
+        margin: 5px 1rem 0 1rem;
+        display: flex;
+        height: 7rem;
+        justify-content: stretch;
+        align-items: stretch;
+        background-color: var(--brandcolor2);
+    }
+
+    .GalerieaufStart {
+        /*Galeriebalken auf Startseite*/
+        border-radius: 1rem;
+        margin: 5px 1rem 0 1rem;
+        display: flex;
+        height: 7rem;
+        justify-content: stretch;
+        align-items: stretch;
+        background-color: var(--brandcolor2);
+    }
+
+    /* Einstellungen für das Impressum (Auch für die Unterseiten) */
+    footer {
+        /*Einstellungen für den Footer/Impressum*/
+        background-color: lightgrey;
+        display: flex;
+    }
+
+    .Impressumlinks {
+        /*Einstellungen aussschließlich für das Impressum*/
+        grid-column: 2 / span 1;
+    }
+
+    .Impressumrechts {
+        grid-column: 3 / span 1;
+        text-align: right;
+    }
+    .FontStartvorText {
+        margin-right: 0.25rem;
+    }
+
+    .modal .modal-title {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+    
+    .modal .modal-body {
+        font-size: 0.7rem;
+    }   
+}

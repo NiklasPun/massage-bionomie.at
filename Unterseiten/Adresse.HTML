@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adresse</title>
+    <link rel="stylesheet" href="../CSS/link.css">
+    <link rel="stylesheet" href="../CSS/unterseiten-alg.css">
+    <link rel="stylesheet" href="../CSS/Unterseiten_CSS/adresse.css">
+</head>
+<body>
+    <header>
+        <ul id="accosDiv">
+            <li>
+                <a href="../index.html" class=""><i class="fa-solid fa-house"></i><span class="PC">Startseite</span></a>
+            </li>
+            <li>
+                <a href="../Unterseiten/KontaktTermin.html" class=""><i class="fa-regular fa-address-card"></i><span class="PC">Kontakt</span></a>
+            </li>
+            <li>
+                <a href="../Unterseiten/Adresse.HTML" class=""><i class="fa-solid fa-location-dot"></i><span class="PC">Adresse</span><i class="onItPin fa-solid fa-map-pin fa-xs"></i></a>
+            </li>
+            <li>
+                <a href="../Unterseiten/Angebote.html" class=""><i class="fa-solid fa-tag"></i><span class="PC">Angebote</span></a>
+            </li>
+            <li>
+                <a href="../Unterseiten/Galerie.html" class=""><i class="fa-solid fa-image"></i><span class="PC">Galerie</span></a>
+            </li>
+            <li>
+                <a href="../Unterseiten/übermich.html" class=""><i class="fa-solid fa-user"></i><span class="PC">Über mich</span></a>
+            </li>
+        </ul>
+        <div id="ButtonDiv" class="arrowDiv animated"><i id="accosButton" class="rotated arrow fa-solid fa-chevron-down"></i></div>
+    </header>
+    <main>
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.409488472383!2d14.388523577186627!3d48.328181537871444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773a2facb38eca3%3A0xad9d0b6df13a9d10!2sOberreichenbach%2016%2C%204209%20Oberreichenbach!5e1!3m2!1sde!2sat!4v1691662540719!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="Adressenkopie">
+                <div>
+                    <button onclick="copytoclipboard()"><i class="fa-solid fa-copy fa-beat fa-2xl"></i></button>
+                    <a href="https://goo.gl/maps/Woq3rWcMtDUkRfCq8">Oberreichenbach 16 4209 Engerwitzdorf</a>
+                </div>
+            </div>
+        </div>
+        <a href="https://fahrplan.oebb.at/webapp/" target="_blank" class="Businfo">
+            <i class="fa-solid fa-bus fa-2xl"></i>
+            <ol>
+                <li><p>1. Bushaltestelle "Oberreichenbach abzw Aigen"</p> <p class="Abstand">Fußweg: 500m (6min)</p></li>
+                <li><p>2. Bushaltestelle<br class="handy"> "Innertreffling B125"</p> <p class="Abstand">Fußweg: 1,1km (14min)</p></li>
+            </ol>
+        </a>
+    </main>
+    <footer>
+        <div class="Impressumlinks">
+            <p><span class="important">Andrea Punzenberger</span><br>Oberreichenbach 16<br>4209 Engerwitzdorf<br>Österreich</p>
+            <p><span class="important"><a class="notbglink" href="Unterseiten/KontaktTermin.html">Kontakt</a></span><br>Telefon: <a class="notbglink" href="tel:+436644318087">+436644318087</a><br>E-Mail: <a class="notbglink" href="mailto:masssage@langwieser.at@">masssage@langwieser.at</a></p>
+        </div>
+        <div class="Impressumrechts">
+            <p class="imprechts PC">
+                <span class="important">Gehe zu:</span><br>
+                <a href="Unterseiten/KontaktTermin.html" class="notbglink">Kontakt<i class="rechtsFontStartvorText fa-regular fa-address-card fa-xs"></i></a><br>
+                <a href="Unterseiten/Adresse.html" class="notbglink">Adresse<i class="rechtsFontStartvorText fa-solid fa-location-dot fa-xs"></i></a><br>
+                <a href="Unterseiten/Angebote.html" class="notbglink">Angebote<i class="rechtsFontStartvorText fa-solid fa-tag fa-xs"></i></a><br>
+                <a href="Unterseiten/Galerie.html" class="notbglink">Galerie<i class="rechtsFontStartvorText fa-solid fa-image fa-xs"></i></a><br>
+                <a href="Unterseiten/übermich.html" class="notbglink">über Mich<i class="rechtsFontStartvorText fa-solid fa-user fa-xs"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="seitNav">
+        <div id="seitButtonDiv" class="seitNavDiv"><i id="seitButton" class="fa-solid fa-chevron-down fa-rotate-90"></i></div>
+        <div id="seitDiv" class="content">
+            <div><a href="../index.html">Home<i class="fa-solid fa-house"></i></a></div>
+            <div><a href="  KontaktTermin.html">Kontakt<i class="fa-regular fa-address-card"></i></a></div>
+            <div><a href="Adresse.HTML">Adresse<i class="fa-solid fa-location-dot"></i></a></div>
+            <div><a href="Angebote.html">Angebote<i class="fa-solid fa-tag"></i></a></div>
+            <div><a href="Galerie.html">Galerie<i class="fa-solid fa-image"></i></a></div>
+            <div><a href="übermich.html">Über mich<i class="fa-solid fa-user"></i></a></div>
+        </div>
+    </div>
+
+    
+    <script src="../js/Adresse.js"></script>
+    <script src="../js/unteracco.js"></script>
+    <script src="../js/Navslide.js"></script>
+</body>
+</html>
